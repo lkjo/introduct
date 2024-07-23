@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿明的自我介紹</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #c0392b; /* 紅色 */
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .content {
+            padding: 2em;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        h1, h2 {
+            color: #c0392b; /* 紅色 */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px; /* 提醒：確保圖片是正方形以保持圓形效果 */
+        }
+        footer {
+            background-color: #c0392b; /* 紅色 */
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .project {
+            margin-bottom: 2em;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label, form input, form textarea, form button {
+            margin-bottom: 1em;
+        }
+        form input, form textarea {
+            padding: 0.5em;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 0.5em;
+            color: white;
+            background-color: #c0392b; /* 紅色 */
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">首頁</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">聯絡方式</a></li>
+            </ul>
+        </nav>
+        <h1>你好，我是阿明</h1>
+        <p>台灣大學資訊工程學系學生</p>
+    </header>
+
+    <section id="home" class="content">
+        <h2>歡迎來到我的個人網頁</h2>
+        <p>這是一個介紹我的平台，請隨意瀏覽，了解我的背景、作品及聯絡方式。</p>
+    </section>
+
+    <section id="about" class="content">
+        <h2>關於我</h2>
+        <img src="profile.jpg" alt="阿明的照片">
+        <p>大家好，我是阿明，目前就讀於台灣大學資訊工程學系。我對軟體開發和人工智慧有濃厚的興趣，並且在校期間參與了多項專案和研究。</p>
+        <p>教育背景:</p>
+        <ul>
+            <li>台灣大學，資訊工程學系，學士學位</li>
+        </ul>
+        <p>技能:</p>
+        <ul>
+            <li>程式設計: Python, Java, C++</li>
+            <li>網頁開發: HTML, CSS, JavaScript</li>
+            <li>機器學習: TensorFlow, Keras</li>
+        </ul>
+    </section>
+
+    <section id="portfolio" class="content">
+        <h2>作品集</h2>
+        <div class="project">
+            <h3>專案名稱一</h3>
+            <img src="project1.jpg" alt="專案一的圖像">
+            <p>這是我在台大期間進行的一個機器學習專案，主題是影像識別。</p>
+        </div>
+        <div class="project">
+            <h3>專案名稱二</h3>
+            <img src="project2.jpg" alt="專案二的圖像">
+            <p>這是一個網頁開發專案，主題是建立一個動態響應式網站。</p>
+        </div>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>聯絡方式</h2>
+        <p>如果你對我的作品或背景有任何問題，或者希望與我合作，請使用以下聯絡方式：</p>
+        <ul>
+            <li>電子郵件: aming@example.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/aming">https://www.linkedin.com/in/aming</a></li>
+            <li>GitHub: <a href="https://github.com/aming">https://github.com/aming</a></li>
+        </ul>
+
+        <form action="mailto:aming@example.com" method="POST" enctype="text/plain">
+            <label for="name">名字:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">電子郵件:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">訊息:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">送出</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 阿明的個人自我介紹網頁</p>
+    </footer>
+</body>
+</html>
